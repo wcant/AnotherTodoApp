@@ -1,5 +1,10 @@
 CREATE DATABASE todoapp;
 
+drop table if exists todos;
+drop table if exists users;
+
+
+
 CREATE TABLE todos (
     id VARCHAR(255) PRIMARY KEY,
     user_email VARCHAR(255),

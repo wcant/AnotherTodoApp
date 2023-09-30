@@ -19,7 +19,7 @@ const ListHeader = ({ listName, getData }) => {
 
   return (
     <div className="list-header">
-      <h1>Today's Task List</h1>
+      <h1>{listName}</h1>
       <div className="button-container">
         <button className="create" onClick={createTask}>
           ADD NEW

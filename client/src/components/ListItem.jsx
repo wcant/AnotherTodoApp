@@ -28,8 +28,12 @@ const ListItem = ({ task, getData }) => {
         <TickIcon />
         <p className="task-title">{task.title}</p>
         <ProgressBar progress={task.progress} readOnly />
+        <div>
+          <textarea name="" id="" cols="30" rows="10">
+            {task.desciption}
+          </textarea>
+        </div>
       </div>
-
       <div className="button-container">
         <button className="edit" onClick={() => setShowModal(true)}>
           EDIT
